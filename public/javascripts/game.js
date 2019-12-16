@@ -40,3 +40,7 @@ socket.on('startGame', function() {
     /* hide countdown */
     document.getElementById('gameCountdown').setAttribute('class', 'hidden');
 })
+
+socket.on('error2', function(message) {
+    alert(message);
+})

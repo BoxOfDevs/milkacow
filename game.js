@@ -19,8 +19,7 @@ function newGame() {
     var gameId = friendlyWords.objects[Math.floor(Math.random()*friendlyWords.objects.length)];
     /* emit game to client */
     this.emit('newGameCreated', {
-        gameId,
-        socketId: this.id
+        gameId
     });
     /* join game room */
     this.join(gameId);
@@ -36,12 +35,14 @@ function joinGame(data) {
     /* check if room exists */
     if (!rooms[gameId]) {
         /* room doesn't exist */
+        this.emit('error2', 'game doesn\'t exist')
         return;
     }
 
     /* check if room is full (max 2 players) */
     if (Object.keys(rooms[gameId].sockets).length >= 2) {
         /* room is full */
+        this.emit('error2', 'game full')
         return;
     }
 
