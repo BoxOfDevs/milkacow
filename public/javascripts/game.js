@@ -12,6 +12,8 @@ function newGame() {
  */
 function joinGame() {
     var gameId = prompt('Game ID')
+        .toLowerCase()
+        .trim()
     socket.emit('joinGame', {
         gameId,
     })
