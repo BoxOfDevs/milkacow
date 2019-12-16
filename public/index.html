@@ -7,8 +7,12 @@
 
 <body>
   <h1>Milk A Cow</h1>
-  <button onclick="newGame()">New Game</button>
+  <button id="newGame" onclick="newGame()">New Game</button>
 
+  <div id="waitingForPlayers" class="hidden">
+    <h2>Game ID: <span id="gameId"></span></h2>
+    Waiting for player...
+  </div>
   <script src="/socket.io/socket.io.js"></script>
   <script src="javascripts/game.js"></script>
 </body>
