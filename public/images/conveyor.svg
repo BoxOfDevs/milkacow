@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.49824,0,0,1.50254,-9.04513,-24.8376)">
+        <ellipse cx="18.154" cy="49.425" rx="4.998" ry="4.986" style="fill:rgb(103,103,103);"/>
+    </g>
+    <g transform="matrix(1.49824,0,0,1.50254,50.851,-24.8376)">
+        <ellipse cx="18.154" cy="49.425" rx="4.998" ry="4.986" style="fill:rgb(103,103,103);"/>
+    </g>
+    <g transform="matrix(1.49824,0,0,1.50254,22.8009,-24.8376)">
+        <ellipse cx="18.154" cy="49.425" rx="4.998" ry="4.986" style="fill:rgb(103,103,103);"/>
+    </g>
+    <ellipse cx="18.154" cy="49.425" rx="4.998" ry="4.986" style="fill:rgb(3,3,2);"/>
+    <g transform="matrix(1,0,0,1,59.8962,0)">
+        <ellipse cx="18.154" cy="49.425" rx="4.998" ry="4.986" style="fill:rgb(3,3,2);"/>
+    </g>
+    <g transform="matrix(1,0,0,1,31.846,0)">
+        <ellipse cx="18.154" cy="49.425" rx="4.998" ry="4.986" style="fill:rgb(3,3,2);"/>
+    </g>
+    <rect x="18.154" y="41.933" width="59.896" height="2.506" style="fill:rgb(103,103,103);"/>
+    <rect x="18.154" y="54.411" width="59.896" height="2.506" style="fill:rgb(103,103,103);"/>
+</svg>
