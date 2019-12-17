@@ -7,8 +7,10 @@ var sio;
  */
 exports.initGame = function(io, socket) {
     sio = io;
+
     socket.on('newGame', newGame);
-    socket.on('joinGame', joinGame)
+    socket.on('joinGame', joinGame);
+    socket.on('milkCow', milkCow);
 }
 
 /**
@@ -63,4 +65,17 @@ function startGame(gameId) {
     setTimeout(function() {
         sio.in(gameId).emit('startGame')
     }, 3000);
+}
+
+/**
+ * Milk cow
+ * @param {object} data 
+ */
+function milkCow(data) {
+    var gameId = data.gameId;
+    var socketId = data.socketId;
+    /* get sender socket */
+    var socket = sio.of('/').connected[socketId]
+    /* notify clients (excluding sender) */
+    socket.to(gameId).emit('otherPlayerMilked')
 }
